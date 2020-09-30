@@ -1,4 +1,4 @@
-#Power of Attorney aggregator.
+## Power of Attorney aggregator.
 
 This is the Power-of-Attorney aggregator built using kotlin and kTor.
 
@@ -9,6 +9,11 @@ This is the Power-of-Attorney aggregator built using kotlin and kTor.
   - Running (incoming and outgoing) requests in coroutines means this server is very scalable
    because only a few threads, and therefore relatively little memory, are needed to fully use the CPU.
    
+The server can be started using the net.bloemsma.guus.ApplicationKt.main() method. It runs on
+http://localhost:8081
+and with SSL on
+https://localhost:8443 . Just accept the self-signed certificate when the browser complains.
+
 https://start.ktor.io/ Has been used to generate a skeleton server and client for the given api.yaml.
 That code has then been enhanced.
 
